@@ -1,0 +1,16 @@
+.input{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 370px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button{
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    background-color: rgb(196, 241, 90);
+}
