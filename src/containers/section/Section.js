@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Section.css';
 
 class Section extends Component {
 
@@ -11,7 +12,7 @@ class Section extends Component {
         const {className, children} = this.props;
 
         return(
-            <div className={className}>
+            <div className={className} id="Section">
                 {children}
             </div>
         );

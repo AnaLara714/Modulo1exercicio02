@@ -23,8 +23,9 @@ filterList(value){
 }
 
 async fetchData(value){
-    const response = await api.get('/v1/search?query='+value)
-    this.setState({sectionData:response?.data})
+    const response = await api.get(value)
+    console.log(value);
+    this.setState({sectionData:response?.data.hits})
 }
 
 async componentDidMount(){
@@ -33,7 +34,7 @@ async componentDidMount(){
 
   render(){
 
-    const {title, footer_desc} = this.props;
+    const {title, footer_desc } = this.props;
 
     const {sectionData} = this.state;
 
@@ -41,14 +42,20 @@ async componentDidMount(){
 
     const sectionClassData = 'SectionData';
     
-    const inputLabel = '';
+    const inputLabel = 'Barra de Pesquisa  ';
 
     return(
       <div className='welcome'>
         <Header title={title}></Header>
-        <br/><br/>
-        <Section className={sectionClassSearch} ><Input label={inputLabel} callback={this.filterList} /></Section>
-        <Section className={sectionClassData}><List data={sectionData} /></Section>
+
+        <Section className={sectionClassSearch}>
+          <Input label={inputLabel} callback={this.filterList} />
+        </Section>
+
+        <Section className={sectionClassData}>
+          <List data={sectionData} />
+        </Section>
+
         <Footer description={footer_desc}></Footer>
       </div>
     );
