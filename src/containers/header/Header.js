@@ -2,11 +2,16 @@ import React, {Component} from 'react';
 import './Header.css';
 
 class Header extends Component {
+    constructor(props){
+        super(props);
+        this.state = {};
+    }
 
     render(){
+        const {title} = this.props;
         return(
             <header className="header">
-                Atividade 02 - DFE
+                <span>{title}</span>
             </header>
         );
     }

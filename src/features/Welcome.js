@@ -42,7 +42,7 @@ async componentDidMount(){
 
     const sectionClassData = 'SectionData';
     
-    const inputLabel = 'Barra de Pesquisa  ';
+    const inputLabel = 'Barra de Pesquisa:  ';
 
     return(
       <div className='welcome'>
