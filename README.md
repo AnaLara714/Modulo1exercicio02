@@ -14,5 +14,4 @@ Acesse meu projeto: https://modulo1exercicio02.vercel.app
   <li>HTML</li>
   <li>CSS</li>
   <li>ReactJS</li>
-  <li>TypeScript</li>
 </ul>
